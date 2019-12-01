@@ -60,7 +60,7 @@ while True:
 	lux = sensor.lux
 	print(lux)
 	time.sleep(1.0)
-	if lux < 1:
+	if lux < 2:
 		print('Sotet van')
 		if GPIO.event_detected(PIR_PIN):
 			setLights(RED_PIN, r)
